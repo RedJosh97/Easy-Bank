@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.hamburger {
+    display: none;
+    background: blue;
+    width: 60px;
+    height: 35px;
+    position: absolute;
+    transform: translateX(185px) translateY(-330px);
+    z-index: 10000;
+    border-radius: 9px;
+}
+
+@media (max-width: 850px){
+.hamburger {
+            display: block;
+        }
+
+        .burger{
+            background: green;
+            width: 90vw;
+            height: 85vh;
+            position: absolute;
+            top: 90px;
+            left: 20px;
+            z-index: 5000;
+            border-radius: 14px;
+            transition: 5s;
+        }
+
+        .navList {
+            margin-top: 30em;
+            text-decoration: none;
+        }
+
+        .burger .navList li {
+            display: flex;
+            flex-direction: column;
+            color: rgb(5, 5, 36);
+            text-align: center;
+            font-size: 2em;
+            text-decoration: none;
+
+        }
+
+}
+
